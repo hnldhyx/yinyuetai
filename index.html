@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title>Document</title>
+</head>
+<script>
+	setRem();
+	window.addEventListener('orientationchange',setRem);
+	window.addEventListener('resize',setRem);
+	function setRem(){
+		var html = document.querySelector('html');
+		var width = html.getBoundingClientRect().width;
+		html.style.fontSize = width / 16 + 'px';
+	}
+	document.addEventListener('touchstart',function(e){
+		e.preventDefault();
+	});
+</script>
+<link rel="stylesheet" href="css/index.css">
+<body>
+<section class="wrap">
+	<!-- 头部开始 -->
+	<header id="header">
+		<!-- 头部第一行 -->
+		<div class="headerC">
+			<h1 id="logo"><a href="#"><img src="imgs/logo.png" alt=""></a></h1>
+			<a href="javascript:;" id="menuBtn" class="menuBtnClose"></a>
+			<nav id="btns">
+				<a href="#" class="searchBtn">搜索</a>
+				<a href="#">登录</a>
+				<a href="#">注册</a>
+			</nav>
+		</div>
+		<!-- 头部第二行 -->
+		<form class="search">
+			<input type="text" placeholder="请输入搜索内容">
+			<input type="submit" value="搜索">
+		</form>
+		<ul id="nav">
+			<li><a href="javascript:void(0);">首页</a></li>
+			<li><a href="javascript:void(0);">MV</a></li>
+			<li><a href="javascript:void(0);">悦单</a></li>
+			<li><a href="javascript:void(0);">V榜</a></li>
+			<li><a href="javascript:void(0);">音悦</a></li>
+			<li><a href="javascript:void(0);">商城</a></li>
+			<li><a href="javascript:void(0);">节目</a></li>
+			<li><a href="javascript:void(0);">饭团</a></li>
+			<li><a href="javascript:void(0);">咨询</a></li>
+			<li><a href="javascript:void(0);">我的家</a></li>
+			<li><a href="javascript:void(0);">APP下载</a></li>
+			<li><a href="javascript:void(0);">热门应用</a></li>
+		</ul>
+	</header>
+	<!-- 头部结束 -->
+	<!-- 内容部分开始 -->
+	<div class="content">
+		<nav id="navScroll">
+			<ul id="navs">
+				<li class="active"><a href="javascript:void(0);">首页</a></li>
+				<li><a href="javascript:void(0);">MV</a></li>
+				<li><a href="javascript:void(0);">悦单</a></li>
+				<li><a href="javascript:void(0);">V榜</a></li>
+				<li><a href="javascript:void(0);">音悦</a></li>
+				<li><a href="javascript:void(0);">商城</a></li>
+				<li><a href="javascript:void(0);">节目</a></li>
+				<li><a href="javascript:void(0);">饭团</a></li>
+				<li><a href="javascript:void(0);">咨询</a></li>
+				<li><a href="javascript:void(0);">我的家</a></li>
+				<li><a href="javascript:void(0);">APP下载</a></li>
+				<li><a href="javascript:void(0);">热门应用</a></li>
+			</ul>
+		</nav>
+		<div id="picTab">
+			<ul id="picList">
+				<li><a href=#><img src="imgs/img1.jpg" alt=""></a></li>
+				<li><a href=#><img src="imgs/img2.jpg" alt=""></a></li>
+				<li><a href=#><img src="imgs/img3.jpg" alt=""></a></li>
+				<li><a href=#><img src="imgs/img4.jpg" alt=""></a></li>
+			</ul>
+			<nav id="picNav">
+				<span class="active"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</nav>
+		</div>
+		<section class="tab">
+			<header class="tabHeader">
+				<h2>MV首播</h2>
+				<a href="#">更多</a>
+			</header>
+			<nav class="tabNav">
+				<a href="javascript:;">全部</a>
+				<a href="javascript:;">内地</a>
+				<a href="javascript:;">港台</a>
+				<a href="javascript:;">欧美</a>
+				<a href="javascript:;">韩国</a>
+				<a href="javascript:;">日本</a>
+				<span></span>
+			</nav>
+			<section class="tabList">
+				<ul class="tabNext">
+					loding
+				</ul>
+				<ul class="tabShow">
+					<li>
+						<a href="javascript:;">
+							<img src="imgs/img.jpg" alt="">
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="imgs/img.jpg" alt="">
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="imgs/img.jpg" alt="">
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="imgs/img.jpg" alt="">
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="imgs/img.jpg" alt="">
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="imgs/img.jpg" alt="">
+							<span>当我们混在一起 夏日泳池版</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="tabNext">
+					loding
+				</ul>
+			</section>
+		</section>
+	</div>
+	<!-- 内容部分结束 -->
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/cssTransform.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

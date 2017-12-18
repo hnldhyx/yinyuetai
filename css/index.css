@@ -1,0 +1,310 @@
+/* 清除样式 */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  vertical-align: top;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+/* 移动端专属reset */
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+  outline: none;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+dl,
+dd {
+  -webkit-text-size-adjust: 100%;
+  font-family: Helvetica;
+}
+html,
+body {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  /*禁止整个页面的滚动条*/
+  background-color: #eee;
+}
+.wrap {
+  height: 100%;
+  overflow: auto;
+}
+#header {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.headerC {
+  height: 2rem;
+  /*135为美工图中量出*/
+}
+#logo {
+  float: left;
+  padding: 0.38518519rem 0.25185185rem 0.31111111rem;
+}
+#logo img {
+  width: 3.55555556rem;
+}
+#menuBtn {
+  float: left;
+  width: 1.91111111rem;
+  height: 2rem;
+  background: url(../imgs/menuBtn.png) no-repeat;
+  background-size: 1.21481481rem 3.45185185rem;
+}
+.menuBtnClose {
+  background-position: center 0.23703704rem !important;
+}
+.menuBtnShow {
+  background-position: center -1.77777778rem !important;
+}
+#btns {
+  float: right;
+  padding-top: 0.31111111rem;
+}
+#btns a {
+  float: left;
+  margin-right: 0.22222222rem;
+  width: 1.64444444rem;
+  height: 1.15555556rem;
+  background-color: #690;
+  color: #ccc;
+  font-size: 0.62222222rem;
+  text-align: center;
+  line-height: 1.15555556rem;
+  border-radius: 3px;
+}
+#btns .searchBtn {
+  font-weight: bold;
+  color: white;
+  margin-right: 0.44444444rem;
+  width: 1.92592593rem;
+  height: 1.18518519rem;
+  line-height: 1.18518519rem;
+  border-radius: 5px;
+}
+.search {
+  height: 1.54074074rem;
+  padding: 0.23703704rem;
+}
+.search input[type="text"] {
+  float: left;
+  width: 12.28148148rem;
+  height: 1.52592593rem;
+  background: #999;
+  padding: 5px 10px;
+  border: 1px solid #5a5a5a;
+  box-sizing: border-box;
+  font-size: .6rem;
+  color: #333;
+  border-radius: 0.22222222rem 0 0 0.22222222rem;
+}
+.search input[type="text"]:focus {
+  background-color: #fff;
+}
+.search input[type="text"]::-webkit-input-placeholder {
+  color: #333;
+}
+.search input[type="submit"] {
+  float: right;
+  width: 3.00740741rem;
+  height: 1.52592593rem;
+  border: none;
+  background: #414040;
+  color: white;
+  border-radius: 0 0.22222222rem 0.22222222rem 0;
+  font-size: 0.77037037rem;
+}
+#nav {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 2rem;
+  border-top: 1px solid #5a5a5a;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+#nav li {
+  float: left;
+  width: 22.5%;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: .8rem;
+  text-align: center;
+  padding: 0.14814815rem 0;
+}
+#nav a {
+  color: white;
+}
+.content {
+  padding-top: 4rem;
+}
+#navScroll {
+  width: 100%;
+  height: 2.62222222rem;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 0.45925926rem 0 0.20740741rem;
+  overflow: hidden;
+}
+#navs {
+  height: 1.91111111rem;
+  white-space: nowrap;
+  /*强制不换行*/
+  font-size: 0;
+  /*消除inline-block左右有间隙问题的第二种方法，给父级元素设置0的字体，具体字体在子类中设置*/
+  float: left;
+}
+#navs li {
+  display: inline-block;
+  padding: 0 0.56296296rem;
+  line-height: 1.91111111rem;
+  font-size: 1.03703704rem;
+}
+#navs a {
+  color: #020202;
+}
+#navs li.active {
+  background: #690;
+}
+#navs .active a {
+  color: white;
+}
+#picTab {
+  overflow: hidden;
+  position: relative;
+}
+#picList {
+  width: 400%;
+  /*在JS加载之前先预设样式*/
+}
+#picList li {
+  float: left;
+  width: 25%;
+  /*在JS加载之前先预设样式*/
+}
+#picList img {
+  width: 100%;
+  display: block;
+}
+#picNav {
+  position: absolute;
+  right: 1.48148148rem;
+  bottom: 3px;
+  width: 100%;
+  text-align: right;
+}
+#picNav span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #c00;
+  border-radius: 5px;
+}
+#picNav span.active {
+  background-color: #0f0;
+}
+.tab {
+  width: 15.4962963rem;
+  margin: 0 auto;
+  background-color: white;
+  overflow: hidden;
+}
+/* font boosting:元素必须有高度 */
+.tabHeader {
+  height: 2rem;
+}
+.tabHeader h2 {
+  float: left;
+}
+.tabHeader a {
+  float: right;
+}
+.tabNav {
+  height: 1.55555556rem;
+  position: relative;
+}
+.tabNav a {
+  float: left;
+  font-size: 0.65185185rem;
+  line-height: 1.55555556rem;
+  width: 1.79259259rem;
+  text-align: center;
+  color: #6b6b6b;
+}
+.tabNav span {
+  position: absolute;
+  width: 1.79259259rem;
+  bottom: 0.08888889rem;
+  height: 3px;
+  background-color: #6f900d;
+  left: 0;
+  transition: 0.3s cubic-bezier(0.08, 1.44, 0.6, 1.46);
+}
+.tabList {
+  width: 300%;
+  overflow: hidden;
+}
+.tabList ul {
+  width: 33.333%;
+  float: left;
+}
+.tabList li {
+  width: 7.4962963rem;
+  float: left;
+  margin: .12rem;
+  padding: 5px;
+  box-sizing: border-box;
+  background: #efefef;
+  font-size: .6rem;
+}
+.tabList a {
+  display: block;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tabList img {
+  width: 100%;
+}
+.tabNext {
+  font-size: 100px;
+  text-align: center;
+  opacity: 0;
+}
